@@ -6,6 +6,24 @@ footer {
 .footer {
   flex-direction: column;
   padding: 2.5rem 0 2rem;
+  
+
+  @media screen and (min-width: $minDesktopWidth) {
+    flex-direction: row;
+    height: 12rem;
+    padding: 2.5rem 10rem;
+  }
+
+  &__group1 {
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    
+    @media screen and (min-width: $minDesktopWidth) {
+      align-items: flex-start;
+    }
+
+  }
 
   &__logo {
     margin-bottom: 1.75rem;
@@ -15,9 +33,7 @@ footer {
     flex-direction: row;
     margin-bottom: 1.75rem;
 
-    img {
-      height: 1.5625rem;
-      
+    a {
       &:not(:last-child) {
         margin-right: 1rem;
       }
@@ -25,18 +41,49 @@ footer {
   }
 
   &__links {
-    flex-direction: column;
+    
     margin-bottom: 2rem;
+    flex-grow: 2;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    @media screen and (min-width: $minDesktopWidth) {
+      flex-direction: row;
+      text-align: left;
+      align-items: left;
+    }
+
+    .column{ 
+      flex-direction: column;
+
+      @media screen and (min-width: $minDesktopWidth) {
+        &:not(:last-child) {
+          margin-right: 9rem;
+        }
+      }
+      
+    }
+
     a {
       color: $white;
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
+      margin-bottom: 1rem;
+      
     }
   }
 
+  &__group3 {
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+    @media screen and (min-width: $minDesktopWidth) {
+      align-items: flex-end;
+    }
+    
+
+  }
   &__invite {
     margin-bottom: 1rem;
   }
-
 }

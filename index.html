@@ -121,7 +121,7 @@
     <section class='articles flex flex-jc-c'>
       <div class="content">
         <h2>Latest Articles</h2>
-        <div class='flex articles-list'>
+        <div class='flex articles-list flex-jc-sb'>
           <div class="articles-list__item">
             <div class="article-image">
               <img src="images/image-currency.jpg" alt="currency">
@@ -186,35 +186,55 @@
     </section>
     
     <footer>
-      <div class="footer flex flex-jc-sa flex-ai-c">
-        <div class="footer__logo">
-          <img class="logo" src="images/logo-white.svg" alt="easybank">
+      <div class="footer flex">
+        <div class="flex footer__group1">
+          <div class="footer__logo">
+            <img class="logo" src="images/logo-white.svg" alt="easybank">
+          </div>
+          
+          <div class="footer__social flex">
+            <!--anchors-->
+            <a title="Facebook" href="#">
+              <img src="images/icon-facebook.svg" alt="">
+            </a>
+            <a title="YouTube" href="#">
+              <img src="images/icon-youtube.svg" alt="">
+            </a>
+            <a title="Twitter" href="#">
+              <img src="images/icon-twitter.svg" alt="">
+            </a>
+            <a title="Pinterest" href="#">
+              <img src="images/icon-pinterest.svg" alt="">
+            </a>
+            <a title="Instagram" href="#">
+              <img src="images/icon-instagram.svg" alt="">
+            </a>
+          </div>
         </div>
         
-        <div class="footer__social flex flex-jc-sb">
-          <img src="images/icon-facebook.svg" alt="">
-          <img src="images/icon-youtube.svg" alt="">
-          <img src="images/icon-twitter.svg" alt="">
-          <img src="images/icon-pinterest.svg" alt="">
-          <img src="images/icon-instagram.svg" alt="">
+        <div class="footer__links flex">
+          <div class="flex column">
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+          </div>
+          <div class="flex column">
+            <a href="">Careers</a>
+            <a href="">Support</a>
+            <a href="">Privacy Policy</a>
+          </div>
         </div>
     
-        <div class="footer__links flex flex-ai-c">
-          <a href="">About Us</a>
-          <a href="">Contact</a>
-          <a href="">Blog</a>
-          <a href="">Careers</a>
-          <a href="">Support</a>
-          <a href="">Privacy Policy</a>
+        <div class="flex footer__group3">
+          <div class="footer__invite">
+            <button>Request Invite</button>
+          </div>
+      
+          <div class='footer__copyright'>
+            <p>© Easybank. All Rights Reserved</p>
+          </div>
         </div>
-    
-        <div class="footer__invite">
-          <button>Request Invite</button>
-        </div>
-    
-        <div class='footer__copyright'>
-          <p>© Easybank. All Rights Reserved</p>
-        </div>
+        
         
       </div>
     </footer>

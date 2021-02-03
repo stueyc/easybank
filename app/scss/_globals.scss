@@ -246,14 +246,16 @@ button {
 }
 
 .points {
-  flex-direction: column;
-
-  @media screen and (min-width: $minDesktopWidth) {
-    flex-direction: row;
-  }
+  //flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  //@media screen and (min-width: $minDesktopWidth) {
+  //  flex-direction: row;
+  //}
   
   div {
     margin: 0.75rem 0;
+    max-width: 16.4rem;
     @media screen and (min-width: $minDesktopWidth) {
       margin-right: 2rem;
       margin-bottom: 2rem;
@@ -277,19 +279,17 @@ button {
 }
 
 .articles-list {
-  //flex-direction: column;
   text-align: left;
-  width: 100%;
   flex-wrap: wrap;
   
   &__item {
-    margin: 0.75rem 0;
+    margin: 0.75rem 1rem;
     background-color: $white;
     border-radius: .25rem;
     //display: flex;
     //min-width: 255px; auto is about 274px
     max-width: 328px;
-    flex: 1 1;
+    //flex: 1 1;
 
     .article-summary {
       margin: 2rem;
