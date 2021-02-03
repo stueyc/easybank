@@ -99,109 +99,11 @@ button {
 }
 
 
-
-.hero {
-  background-color: $veryLightGray;
-  text-align: center;
-  
-
-  &__content {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    position: relative;
-    @media screen and (min-width: $minDesktopWidth) {
-      flex-direction: row-reverse;
-    }
-  }
-
-  &__image {
-    min-height: 100vw;
-    background-image: url("../../images/bg-intro-mobile.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
-    
-    @media screen and (min-width: $minDesktopWidth) {
-      background-image: url("../../images/bg-intro-desktop.svg");
-      position: relative;
-      background-size: 170%;
-      background-position: top -185px left -50px;
-      min-height: 750px;
-      
-    }
-    
-    //flex-grow: 1;
-
-    //stuff for desktop
-    flex: 1.7;
-    
-
-    img {
-      position: absolute;
-      //display: block;
-      top: -8.5%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-
-      z-index: 0;
-      
-      width: 91%;
-      
-      @media screen and (min-width: $minDesktopWidth) {
-        top: -5%;
-        left: 67%;
-        width: 100%;
-      }
-    }
-  }
-
-  &__text {
-    
-    padding: 0px 1.875rem 3rem;
-
-    //for desktop
-
-    @media screen and (min-width: $minDesktopWidth) {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      //align-items: left;
-      justify-content: center;
-      text-align: left;
-      padding: 0 6.4rem 0 10.3rem;
-    }    
-    
-    
-    
-      h1 {
-        color: $darkBlue;
-        font-weight: normal;
-        @media screen and (min-width: $minDesktopWidth) {
-          font-weight: 300;
-          font-size: $font-large;
-          margin-bottom: .5rem;
-          line-height: 4rem;
-        }    
-      }
-      p {
-        font-size: $font-small;
-        line-height: 1.5rem;
-        margin-bottom: 1.5rem;
-
-        @media screen and (min-width: $minDesktopWidth) {
-          font-size: $font-med;
-          line-height: 1.7rem;
-          margin-bottom: 2rem;
-        }
-      }
-      
-  }
-}
-
-
 .content {
-  max-width: 1440px; 
+  max-width: 500px;
+  @media screen and (min-width: $minDesktopWidth) {
+    max-width: 1440px;
+  }
 }
 
 .benefits {

@@ -1,0 +1,94 @@
+.hero {
+  background-color: $veryLightGray;
+  text-align: center;
+  
+
+  &__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    position: relative;
+    @media screen and (min-width: $minDesktopWidth) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    min-height: 22rem;
+    width: 100%;
+    background-image: url("../../images/bg-intro-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex: 1.7;
+    
+    @media screen and (min-width: $minDesktopWidth) {
+      background-image: url("../../images/bg-intro-desktop.svg");
+      position: relative;
+      background-size: auto;
+      background-position: top -185px left -50px;
+      min-height: 750px;
+      
+    }
+
+    
+    
+
+    img {
+      position: absolute;
+      top: -8.5%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+
+      z-index: 0;
+      
+      width: 21.5rem;
+      
+      @media screen and (min-width: $minDesktopWidth) {
+        top: -6%;
+        left: 67%;
+        width: 48.125rem;
+      }
+    }
+  }
+
+  &__text {
+    
+    padding: 0px 1.875rem 3rem;
+
+    @media screen and (min-width: $minDesktopWidth) {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      text-align: left;
+      padding: 0 4rem 0 10.3rem;
+    }    
+    
+    
+    
+      h1 {
+        color: $darkBlue;
+        font-weight: normal;
+        font-size: 2.5rem;
+        font-weight: 300;
+
+        @media screen and (min-width: $minDesktopWidth) {
+          font-size: $font-large;
+          margin-bottom: .5rem;
+          line-height: 4rem;
+        }    
+      }
+      p {
+        font-size: $font-small;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        @media screen and (min-width: $minDesktopWidth) {
+          font-size: $font-med;
+          line-height: 1.7rem;
+          margin-bottom: 2rem;
+        }
+      }
+      
+  }
+}
