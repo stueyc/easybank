@@ -1,0 +1,42 @@
+footer {
+  background-color: $darkBlue;
+  font-size: $font-small;
+}
+
+.footer {
+  flex-direction: column;
+  padding: 2.5rem 0 2rem;
+
+  &__logo {
+    margin-bottom: 1.75rem;
+  }
+
+  &__social {
+    flex-direction: row;
+    margin-bottom: 1.75rem;
+
+    img {
+      height: 1.5625rem;
+      
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__links {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    a {
+      color: $white;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__invite {
+    margin-bottom: 1rem;
+  }
+
+}

@@ -1,0 +1,78 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: $white;
+    margin: auto;
+  nav {
+    padding: 0 1.5rem;
+    height: $nav-height;
+    flex-grow: 1;
+    @media screen and (min-width: $minDesktopWidth) {
+      justify-content: space-around;
+      height: 5rem;
+    }
+  }
+
+  &__logo {
+
+    img{ 
+      display: block
+    }
+  }
+
+  &__menu { //mobile menu
+    
+    @media screen and (min-width: $minDesktopWidth) {
+      display: none;
+    }
+
+    .open {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    height: 100%;
+    @media screen and (max-width: $maxMobileWidth) {
+      display: none;
+    }
+    a {
+      font-size: $font-small;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      &:not(:last-child) {
+        margin-right: 1.75rem;
+      }
+
+      &:hover {
+        //border-width: 5px;
+        //border-style: solid;
+        //border-image-source: linear-gradient(to right, $limeGreen, $brightCyan);
+        //border-image-slice: 1;
+        color: $darkBlue;
+        border-image: 
+        linear-gradient(to right, $limeGreen, $brightCyan)
+        1 /
+        0px 0px 5px 0px
+        
+        //border: 10px solid linear-gradient(to right, $limeGreen, $brightCyan);
+        //border-bottom: linear-gradient(to right, $limeGreen, $brightCyan);
+        
+      }
+    }
+    
+  }
+
+  &__invite {
+    
+
+    @media screen and (max-width: $maxMobileWidth) {
+      display: none;
+    }
+  }
+
+}
