@@ -121,79 +121,6 @@ button:hover {
   }
 }
 
-.benefits {
-  text-align: center;
-  padding: 3rem 1.875rem;
-  line-height: 1.5rem;
-  background-color: #f3f4f6;
-}
-
-@media screen and (min-width: 1024px) {
-  .benefits {
-    padding: 3rem 10.3rem;
-    text-align: left;
-  }
-}
-
-.benefits p {
-  font-size: 0.875rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .benefits p {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-}
-
-.benefits h2 {
-  font-size: 2rem;
-}
-
-.benefits h2, .benefits h3 {
-  color: #2d314d;
-  font-weight: 300;
-  line-height: 1.3;
-  margin: .75rem 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .benefits h2, .benefits h3 {
-    margin: 2rem 0;
-  }
-}
-
-.benefit-top {
-  margin-bottom: 2rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .benefit-top {
-    margin-bottom: 4rem;
-    max-width: 56%;
-  }
-}
-
-.points {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.points div {
-  margin: 0.75rem 0;
-  max-width: 16.4rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .points div {
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-
 .articles {
   text-align: center;
   padding: 3rem 1.875rem;
@@ -544,7 +471,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: left;
-    padding: 0 4rem 0 10.3rem;
+    padding: 0 4rem 0 10rem;
   }
 }
 
@@ -574,6 +501,120 @@ footer {
     font-size: 1.125rem;
     line-height: 1.7rem;
     margin-bottom: 2rem;
+  }
+}
+
+.benefits {
+  text-align: center;
+  line-height: 1.5rem;
+  background-color: #f3f4f6;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits {
+    text-align: left;
+  }
+}
+
+.benefits__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.benefits p {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.benefits h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.benefits h2, .benefits h3 {
+  color: #2d314d;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: .75rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits h2, .benefits h3 {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.benefit-top {
+  margin: 3rem 1.875rem 0 1.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefit-top {
+    margin: 4.5rem 0 0 10rem;
+  }
+}
+
+.benefit-top p {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefit-top p {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+.points {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 1.875rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .points {
+    margin: 4rem 7rem 4rem 10rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.points div {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .points div {
+    max-width: 16.4rem;
+  }
+  .points div:not(:last-child) {
+    margin-right: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

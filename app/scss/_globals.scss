@@ -106,66 +106,6 @@ button {
   }
 }
 
-.benefits {
-  text-align: center;
-  padding: 3rem 1.875rem;
-  line-height: 1.5rem;
-  background-color: $lightGrayishBlue;
-
-  @media screen and (min-width: $minDesktopWidth) {
-    padding: 3rem 10.3rem;
-    text-align: left;
-  }
-  p {
-    font-size: $font-small;
-    @media screen and (min-width: $minDesktopWidth) {
-    font-size: 1rem;
-    font-weight: 300;
-    }
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h2, h3 {
-    color: $darkBlue;
-    font-weight: 300;
-    line-height: 1.3;
-    margin: .75rem 0;
-    @media screen and (min-width: $minDesktopWidth) {
-      margin: 2rem 0;
-    }
-  }
-}
-
-.benefit-top {
-  margin-bottom: 2rem;
-  @media screen and (min-width: $minDesktopWidth) {
-    margin-bottom: 4rem;
-    max-width: 56%;
-  } 
-}
-
-.points {
-  //flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  //@media screen and (min-width: $minDesktopWidth) {
-  //  flex-direction: row;
-  //}
-  
-  div {
-    margin: 0.75rem 0;
-    max-width: 16.4rem;
-    @media screen and (min-width: $minDesktopWidth) {
-      margin-right: 2rem;
-      margin-bottom: 2rem;
-    }
-  }
-  
-}
-
 .articles {
 
   h2 {
