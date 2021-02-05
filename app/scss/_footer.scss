@@ -6,6 +6,7 @@ footer {
 .footer {
   flex-direction: column;
   padding: 2.5rem 0 2rem;
+  flex-grow: 1;
   
 
   @media screen and (min-width: $minDesktopWidth) {
