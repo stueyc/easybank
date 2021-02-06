@@ -64,20 +64,18 @@
 .points {
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem 1.875rem 2rem;
+  margin: 1rem 1.5rem 2rem;
 
   @media screen and (min-width: $minDesktopWidth) {
-    margin: 4rem 7rem 4rem 10rem;
-    justify-content: left;
+    margin: 4rem 8rem 4rem 10rem;
+    justify-content: space-between;
   } 
   
   div {
     margin-bottom: 1rem;
+    max-width: 20.5rem;
     @media screen and (min-width: $minDesktopWidth) {
-      max-width: 16.4rem;
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
+      max-width: 16rem;
     } 
   
   }

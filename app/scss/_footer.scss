@@ -39,6 +39,12 @@ footer {
         margin-right: 1rem;
       }
     }
+
+    svg:hover {
+      path {
+        fill: $limeGreen;
+      }
+    }
   }
 
   &__links {
@@ -69,6 +75,10 @@ footer {
     a {
       color: $white;
       margin-bottom: 1rem;
+
+      &:hover {
+        color: $limeGreen;
+      }
       
     }
   }

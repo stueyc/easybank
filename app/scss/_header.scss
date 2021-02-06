@@ -49,19 +49,11 @@
       }
 
       &:hover {
-        //border-width: 5px;
-        //border-style: solid;
-        //border-image-source: linear-gradient(to right, $limeGreen, $brightCyan);
-        //border-image-slice: 1;
         color: $darkBlue;
         border-image: 
         linear-gradient(to right, $limeGreen, $brightCyan)
         1 /
         0px 0px 5px 0px
-        
-        //border: 10px solid linear-gradient(to right, $limeGreen, $brightCyan);
-        //border-bottom: linear-gradient(to right, $limeGreen, $brightCyan);
-        
       }
     }
     

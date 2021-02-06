@@ -50,6 +50,10 @@
       
       .article-summary {
         margin: 2rem;
+
+        h4:hover {
+          color: $limeGreen;
+        }
       }
   
       img {
